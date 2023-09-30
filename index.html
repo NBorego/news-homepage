@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Tittle -->
+    <title>News homepage</title>
+</head>
+<body class="max-w-screen-xl m-auto font-inter bg-neutral-Off-white">
+    <header class="flex justify-between items-center p-5">
+        <div>
+            <img
+                src="./assets/images/logo.svg"
+                alt="Logo icon"
+                class="max-w-full w-full"
+            />
+        </div>
+        <nav class="lg:w-full lg:block lg:relative lg:p-0 lg:bg-transparent bg-white fixed right-0 top-0 bottom-0 w-[70vw] p-4 hidden ease-in-out">
+            <button id="menu-close" class="lg:hidden absolute right-0 px-4">
+                <img src="./assets/images/icon-menu-close.svg" alt="Menu close button">
+            </button>
+
+            <ul class="lg:flex lg:p-0 lg:justify-end lg:relative lg:top-0 lg:translate-y-0 lg:space-y-0 lg:space-x-6 absolute top-1/2 -translate-y-1/2 space-y-6 text-neutral-Very-dark-blue p-4 font-bold">
+                <li class="hover:text-primary-Soft-orange transition-all cursor-pointer">
+                    Home
+                </li>
+                <li class="hover:text-primary-Soft-orange transition-all cursor-pointer">
+                    New
+                </li>
+                <li class="hover:text-primary-Soft-orange transition-all cursor-pointer">
+                    Popular
+                </li>
+                <li class="hover:text-primary-Soft-orange transition-all cursor-pointer">
+                    Trending
+                </li>
+                <li class="hover:text-primary-Soft-orange transition-all cursor-pointer">
+                    Categories
+                </li>
+            </ul>
+        </nav>
+
+        <div class="lg:hidden">
+            <button id="menu-button" >
+                <img src="./assets/images/icon-menu.svg" alt="Menu icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="lg:flex lg:gap-8 lg:space-y-0 px-5 space-y-14">
+        <main>
+            <picture>
+                <source
+                    media="(max-width: 768px)"
+                    srcset="assets/images/image-web-3-mobile.jpg"
+                    class="max-w-full w-full"
+                />
+                <img
+                    src="assets/images/image-web-3-desktop.jpg"
+                    alt="Web 3 desktop image"
+                    class="max-w-full w-full"
+                />
+            </picture>
+
+            <article class="lg:grid lg:grid-cols-2 lg:mt-0 lg:space-y-0 lg:gap-8 lg:place-items-center space-y-4 mt-4">
+                <h1 class="lg:text-6xl lg:mt-8 text-3xl text-neutral-Very-dark-blue font-bold">
+                    The Bright Future of Web 3.0?
+                </h1>
+
+                <div class="space-y-4">
+                    <p class="lg:mt-8 text-neutral-Dark-grayish-blue leading-7">
+                        We dive into the next evolution of the web that claims
+                        to put the power of the platforms back into the hands of
+                        the people. But is it really fulfilling its promise?
+                    </p>
+                    <button
+                        class="lg:w-48 bg-primary-Soft-red text-white uppercase py-3 px-8 font-inter tracking-widest font-bold hover:bg-neutral-Very-dark-blue transition-all"
+                    >
+                        Read more
+                    </button>
+                </div>
+            </article>
+        </main>
+
+        <section
+            class="bg-neutral-Very-dark-blue text-neutral-Dark-grayish-blue p-4 space-y-4"
+        >
+            <h2 class="text-primary-Soft-orange font-bold text-2xl">New</h2>
+
+            <article class="space-y-2">
+                <h3
+                    class="text-white hover:text-primary-Soft-orange font-bold transition-colors cursor-pointer"
+                >
+                    Hydrogen VS Electric Cars
+                </h3>
+
+                <p class="leading-7">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+            </article>
+
+            <div class="border-t border-neutral-Dark-grayish-blue"></div>
+
+            <article class="space-y-2">
+                <h3
+                    class="text-white hover:text-primary-Soft-orange font-bold transition-colors cursor-pointer"
+                >
+                    The Downsides of AI Artistry
+                </h3>
+
+                <p class="leading-7">
+                    What are the possible adverse effects of on-demand AI
+                    image generation?
+                </p>
+            </article>
+
+            <div class="border-t border-neutral-Dark-grayish-blue"></div>
+
+            <article class="space-y-2">
+                <h3
+                    class="text-white hover:text-primary-Soft-orange font-bold transition-colors cursor-pointer"
+                >
+                    Is VC Funding Drying Up?
+                </h3>
+
+                <p class="leading-7">
+                    Private funding by VC firms is down 50% YOY. We take a
+                    look at what that means.
+                </p>
+            </article>
+        </section>
+    </section>
+    <aside class="lg:grid lg:grid-cols-3 lg:mb-0 lg:space-y-0 lg:mt-8 space-y-4 p-5 mb-20">
+        <article class="flex gap-4">
+            <img
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="Retro PCs"
+                class="w-36"
+            />
+
+            <div class="flex flex-col justify-center">
+                <span class="text-neutral-Grayish-blue text-3xl font-bold"
+                    >
+                    01
+                </span>
+                <h1 class="text-2xl text-neutral-Very-dark-blue font-bold">
+                    Reviving Retro PCs
+                </h1>
+                <p class="text-neutral-Dark-grayish-blue">
+                    What happens when old PCs are given modern upgrades?
+                </p>
+            </div>
+        </article>
+
+        <article class="flex gap-4 ">
+            <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="Keyboard"
+                class="w-36"
+            />
+
+            <div class="flex flex-col justify-center">
+                <span class="text-neutral-Grayish-blue text-3xl font-bold"
+                    >02</span
+                >
+                <h1 class="text-2xl text-neutral-Very-dark-blue font-bold">
+                    Top 10 Laptops of 2022
+                </h1>
+                <p class="text-neutral-Dark-grayish-blue">
+                    Our best picks for various needs and budgets.
+                </p>
+            </div>
+        </article>
+
+        <article class="flex gap-4 ">
+            <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="Videogame control"
+                class="w-36"
+            />
+
+            <div class="flex flex-col justify-center">
+                <span class="text-neutral-Grayish-blue text-3xl font-bold"
+                    >03</span
+                >
+                <h1 class="text-2xl text-neutral-Very-dark-blue font-bold">
+                    The Growth of Gaming
+                </h1>
+                <p class="text-neutral-Dark-grayish-blue">
+                    How the pandemic has sparked fresh opportunities.
+                </p>
+            </div>
+        </article>
+    </aside>
+    <script src="./src/script.js"></script>
+</body>
+</html>
